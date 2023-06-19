@@ -1,0 +1,35 @@
+/* Styling Components
+demo-03: Importing SCSS into a Scoped Component
+*/
+
+//Variables
+$color-items: #9C27B0;
+$color-grey: #2c3e50;
+$color-blue: #003366;
+
+/*
+Using the addition symbol + means the elements placed after
+the first element will be styled if they match the condition.
+
+For example, h1 + h2 will dictate that all H2 elements after H1 will be
+styled in a way, but H3 will not.
+ */
+h1,h2,h3 {
+  margin-top: 60px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+h1,h3 {
+  color: $color-grey;
+}
+h2 {
+  color: $color-items;
+}
+
+div {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  color: #2c3e50;
+  margin-left: 20px;
+  text-align: left;
+}
